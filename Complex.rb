@@ -5,23 +5,20 @@ class ComplexNum
     def addComplex(cn1,cn2)
         realNum = cn1.real + cn2.real
         imgNum = cn1.imag + cn2.imag
-        return realNum.to_s + "+" + imgNum.to_s + 'i'
+        return realNum.to_s + "+" + imgNum.to_s + "i"
     end
 
     def multComplex(cn1,cn2)
         realNum = (cn1.real * cn2.real) - (cn1.imag * cn2.imag)
         imgNum = (cn1.real * cn2.imag) + (cn1.imag * cn2.real)
-        return realNum.to_s + "+" + imgNum.to_s + 'i'
+        return realNum.to_s + "+" + imgNum.to_s + "i"
     end
 
     def bulk_add(cns = [])
         i = 0
-        $sum = ""
-        # cns.each do |item|
+        $sum 
         while i < cns.length
-            puts "um in the loop"
-            # $sum = item + cns[i] 
-            $sum = self.addComplex($sum,cns[i])
+            $sum = self.addComplex($sum.to_i,cns[i])
             i += 1
         end
         return $sum.to_s
@@ -29,10 +26,9 @@ class ComplexNum
 
     def bulk_multiply(cns = [])
         i = 0
-        cns . each do |item|
-            if i < cns.length
-                $product = item * cns[i]
-            end
+        $product
+        while i < cns.length
+            $product = self.multComplex($product.to_i,cns[i])
             i += 1
         end
         return $product.to_s
