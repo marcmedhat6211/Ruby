@@ -18,10 +18,7 @@ ActiveRecord::Schema.define(version: 2020_04_30_200853) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user"
-    t.bigint "article_id", null: false
-    t.integer "userID"
     t.bigint "user_id", null: false
-    t.index ["article_id"], name: "index_articles_on_article_id"
     t.index ["user_id"], name: "index_articles_on_user_id"
   end
 

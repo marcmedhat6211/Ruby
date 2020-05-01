@@ -22,6 +22,11 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'cancancan', '~> 1.15'
+gem 'appraisal', '~> 2.2'
+gem 'bundler', '~> 2.1', '>= 2.1.4'
+gem 'rake', '~> 13.0', '>= 13.0.1'
+gem 'rspec', '~> 3.9'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
